@@ -6,6 +6,7 @@ import DataEditor from './components/DataEditor';
 import ProjectUpload from './components/ProjectUpload';
 import Results from './components/Results';
 import PortfolioDeployment from './components/PortfolioDeployment';
+import BuiltWithBoltBadge from './components/BuiltWithBoltBadge';
 import { ParsedResumeData } from './utils/resumeParser';
 import { Project } from './types/project';
 
@@ -106,8 +107,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      {/* Built with Bolt Badge */}
+      <BuiltWithBoltBadge />
+
       {/* Header */}
-      <div className="bg-black/20 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
+      <div className="bg-black/20 backdrop-blur-md border-b border-white/10 sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
